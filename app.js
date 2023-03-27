@@ -26,4 +26,6 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', indexRouter);
 app.use('/students', studentRouter);
 
+app.use(cors());
+
 module.exports = app;
